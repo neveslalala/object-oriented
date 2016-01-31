@@ -6,6 +6,8 @@ int main()
 	scanf("%d %d",&a,&b);
 	c=a+b;
 	l=c;
+	if(l!=0)
+	{ 
 	if(l<0) l=-l;
 	for(i=0;l!=0;i++)
 	{
@@ -26,5 +28,7 @@ int main()
 		printf("%d",d[i]);
 		if((i+1-p)%3==0&&i!=n-1) printf(",");
 	}
+    }
+    else printf("0");
 	return 0;	
 } 
